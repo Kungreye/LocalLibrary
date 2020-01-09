@@ -42,6 +42,9 @@ class Book(models.Model):
         """Create a string for the Genre. This is required to display genre in Admin."""
         return ', '.join(genre.name for genre in self.genre.all()[:3])
 
+    class Meta:
+        permissions = (('can_crud_book', 'CRUD book'),)
+
     display_genre.short_description = 'Genre'
 
 
@@ -89,6 +92,7 @@ class Author(models.Model):
 
     class Meta:
         ordering = ['last_name', 'first_name']
+        permissions = (('can_crud_author', 'CRUD author'),)
 
     def get_absolute_url(self):
         return reverse('author-detail', args=[str(self.id)])

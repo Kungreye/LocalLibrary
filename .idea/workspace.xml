@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50a5802f-11cb-48a5-9692-e6415552c22f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalLibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LocalLibrary/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalLibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LocalLibrary/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/bookinstance_list_borrowed_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
@@ -24,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -40,7 +38,8 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/catalog/templates/catalog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -94,10 +93,18 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2199" y="224" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1578485916425">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2199" y="224" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578485916425" />
     <state x="2357" y="165" key="#models" timestamp="1578394617967">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="2357" y="165" key="#models/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578394617967" />
+    <state x="2392" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578480746589">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2392" y="414" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578480746589" />
     <state x="2228" y="273" key="DBNavigator.DatasetFilterDialog" timestamp="1578467080241">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
@@ -106,13 +113,17 @@
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
     <state x="2178" y="213" key="DBNavigator.ProjectSettingsDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578044528999" />
-    <state x="2149" y="190" key="SettingsEditor" timestamp="1578467663842">
+    <state x="2149" y="190" key="SettingsEditor" timestamp="1578536990594">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state x="2149" y="190" key="SettingsEditor/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578467663842" />
-    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1578048261762">
+    <state x="2149" y="190" key="SettingsEditor/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578536990594" />
+    <state x="2333" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1578535196494">
       <screen x="1680" y="23" width="1920" height="1057" />
     </state>
-    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578048261762" />
+    <state x="2333" y="384" key="com.intellij.ide.util.TipDialog/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578535196494" />
+    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1578483151767">
+      <screen x="1680" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2305" y="258" width="670" height="676" key="search.everywhere.popup/1680.23.1920.1057/0.23.1680.1027@1680.23.1920.1057" timestamp="1578483151767" />
   </component>
 </project>
