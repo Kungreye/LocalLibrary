@@ -88,8 +88,8 @@ def renew_book_librarian(request, pk):
         if form.is_valid():
             book_instance.due_back = form.cleaned_data['renewal_date']
             book_instance.save()
-        # redirect to a new URL
-        return HttpResponseRedirect(reverse('all-borrowed'))
+            # redirect to a new URL
+            return HttpResponseRedirect(reverse('all-borrowed'))
     # If this is a GET (or any other method), create the default form.
     else:
         proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
